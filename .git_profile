@@ -1,0 +1,4 @@
+source ~/.git-enhancement/bash-git-prompt/gitprompt.sh
+GIT_PROMPT_ONLY_IN_REPO=1
+
+source ~/.git-enhancement/git-flow-completion/git-flow-completion.bash

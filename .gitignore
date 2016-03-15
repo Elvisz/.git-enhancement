@@ -1,0 +1,10 @@
+.svn
+.git
+.hg
+.vscode
+CVS
+.idea
+*.sublime-*
+node_modules
+bower_components
+sassdoc

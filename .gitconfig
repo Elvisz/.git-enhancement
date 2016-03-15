@@ -1,0 +1,20 @@
+[user]
+  name = Elvis Zhong
+  email = 33783229@qq.com
+[core]
+  excludesfile = ~/.git-enhancement/.gitignore
+  editor = vim
+[alias]
+  d = difftool
+  rms = "!f(){ git rm --cached \"$1\";rm -rf \"$1\";git config -f .gitmodules --remove-section \"submodule.$1\";git config -f .git/config --remove-section \"submodule.$1\";git add .gitmodules; }; f"
+[merge]
+  conflictstyle = diff3
+  tool = mymeld
+[mergetool "mymeld"]
+  cmd = meld --auto-merge --output $MERGED $LOCAL $BASE $REMOTE --diff $BASE $LOCAL --diff $BASE $REMOTE
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[credential]
+  helper = store
