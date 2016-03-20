@@ -2,6 +2,7 @@
 .git
 .hg
 .vscode
+*.swp
 CVS
 .idea
 *.sublime-*
