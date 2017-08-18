@@ -2,6 +2,7 @@
 .git
 .hg
 .vscode
+.DS_Store
 *.swp
 CVS
 .idea
@@ -9,3 +10,4 @@ CVS
 node_modules
 bower_components
 sassdoc
+.tern-project

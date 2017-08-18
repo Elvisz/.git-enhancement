@@ -2,3 +2,11 @@ source ~/.git-enhancement/bash-git-prompt/gitprompt.sh
 GIT_PROMPT_ONLY_IN_REPO=1
 
 source ~/.git-enhancement/git-flow-completion/git-flow-completion.bash
+
+# Personalize git commands
+alias git-authors="git shortlog -sne"
+alias git-tree="git log --graph --decorate --oneline --simplify-by-decoration --all"
+alias git-commits="git log --pretty=format:\"%h - %an, %ar: %s\" --graph --no-merges"
+alias git-commits-with-merges="git log --pretty=format:\"%h - %an, %ar: %s\" --graph"
+alias git-commited-by="git log --pretty=format:\"%h - %an, %ar: %s\" --graph --no-merges --author"
+alias git-files-changes="git diff --name-status"
