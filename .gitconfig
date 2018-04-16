@@ -1,6 +1,5 @@
 [user]
   name = Elvis Zhong
-  email = elvis.zhong@activenetwork.com
 [core]
   excludesfile = ~/.git-enhancement/.gitignore
   editor = vim
