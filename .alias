@@ -1,8 +1,3 @@
-source ~/.git-enhancement/bash-git-prompt/gitprompt.sh
-GIT_PROMPT_ONLY_IN_REPO=1
-
-source ~/.git-enhancement/git-flow-completion/git-flow-completion.bash
-
 # Personalize git commands
 alias git-authors="git shortlog -sne"
 alias git-tree="git log --graph --decorate --oneline --simplify-by-decoration --all"
