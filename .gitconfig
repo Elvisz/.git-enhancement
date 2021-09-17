@@ -1,9 +1,11 @@
 [core]
   excludesfile = ~/.git-enhancement/.gitignore
   editor = vim
+  ignorecase = false
 [alias]
   d = difftool
   rms = "!f(){ git rm --cached \"$1\";rm -rf \"$1\";git config -f .gitmodules --remove-section \"submodule.$1\";git config -f .git/config --remove-section \"submodule.$1\";git add .gitmodules; }; f"
+	fame = !python -m gitfame
 [merge]
   conflictstyle = diff3
   tool = vimdiff
@@ -11,5 +13,15 @@
   tool = vimdiff
 [difftool]
   prompt = false
-[credential]
-  helper = store
+# [credential]
+#   helper = store --file=~/.git-enhancement/.git-credentials
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[init]
+  defaultBranch = master
+[user]
+  name = zhongmingliang
+  email = zhongml@seeyon.com
